@@ -145,7 +145,7 @@ section:hover button{
 
   .screens {
     margin-top: 15px;
-    gap: 5px;
+    gap: 3px;
   }
   section p{
     text-align: center;
@@ -162,7 +162,7 @@ section:hover button{
   }
 
   section button {
-    margin: 4px 0;
+    margin: -30px 0;
     padding: 15px 0;
   }
 
@@ -196,8 +196,8 @@ section:hover button{
   }
 
   .screens {
+    width: 100%;
     margin-top: 15px;
-    gap: 5px;
   }
 
   section p {
@@ -207,13 +207,15 @@ section:hover button{
   }
 
   .screenPorDefecto, .screenRedondeado {
-    width: 120px; 
+    width: 150px; 
   }
 
   main {
     padding: 10px; 
   }
-
+  .btn {
+    margin: -25px 0;
+  }
   section button {
     margin: 4px 0;
     padding: 15px 0;
