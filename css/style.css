@@ -96,8 +96,9 @@ input:focus {
 .btn {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
 section button {
@@ -168,6 +169,17 @@ section:hover button{
 
 }
 
+footer {
+  background-color: #001f3f; 
+  color: #fff; 
+  text-align: center; 
+  padding: 10px; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
 
 /* Media query para pantallas con un ancho máximo de 414 píxeles y una altura máxima de 736 píxeles */
 @media screen and (max-width: 430px) and (max-height: 736px) {
@@ -207,7 +219,13 @@ section:hover button{
   }
 
   .screenPorDefecto, .screenRedondeado {
-    width: 150px; 
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   main {

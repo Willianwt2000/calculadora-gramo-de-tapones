@@ -28,10 +28,10 @@
 
   <main>
     <form>
-      <label for="pesoKg">Ingrese el peso adecuado:</label>
-      <input type="number" id="pesoKg" required>
+      <label for="pesoG">Ingrese el peso adecuado en Gramos:</label>
+      <input type="number" id="pesoG" required>
 
-      <label for="cantidadTapa">Ingrese la cantidad de tapa pesada en KG:</label>
+      <label for="cantidadTapa">Ingrese la cantidad de tapas pesadas en Gramos:</label>
       <input type="number" id="cantidadTapa" required>
 
       <label for="cantidadEmpacar">Ingrese la cantidad a empacar:</label>
@@ -40,19 +40,25 @@
 
     <section class="screens">
       <div class="screen1">
-        <p>Valor Por defecto:</p>
+        <p>Valor por defecto:</p>
         <div class="screenPorDefecto" id="screenPorDefecto"></div>
       </div>
       <div class="screen2">
-        <p>Valor Por redondeado:</p>
-        <div class="screenRedondeado" id="screenRedondeado">55</div>
+        <p>Valor redondeado:</p>
+        <div class="screenRedondeado" id="screenRedondeado"></div>
       </div>
     </section>
 
     <section class="btn">
       <button>Calcular</button>
+      <button id="clear">Limpiar</button>
     </section>
   </main>
+
+  <footer>
+    <!-- Pie de página con información de copyright -->
+    <p>&copy; <span id="year"></span> will${Dev} - 23-01-2024</p>
+  </footer>
 
   <script src="./js/app.js" defer></script>
 </body>
