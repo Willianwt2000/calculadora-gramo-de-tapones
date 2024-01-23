@@ -142,6 +142,7 @@ section:hover button{
 
   label{
     text-align: center;
+   
   }
 
   .screens {
@@ -155,6 +156,7 @@ section:hover button{
   }
   .screenPorDefecto, .screenRedondeado{
     width: 150px;
+    
   }
 
 
@@ -165,6 +167,7 @@ section:hover button{
   section button {
     margin: -20px 0;
     padding: 15px 0;
+    user-select: none;
   }
 
 }
@@ -177,6 +180,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  user-select: none;
 }
 
 
