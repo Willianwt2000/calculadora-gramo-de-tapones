@@ -4,9 +4,7 @@ const cantidadEmpacar = document.getElementById('cantidadEmpacar');
 const screenPorDefecto = document.getElementById('screenPorDefecto');
 const screenRedondeado = document.getElementById('screenRedondeado');
 const btn = document.querySelector('button');
-const btnClear= document.querySelector('#clear');
-
-
+const btnClear = document.querySelector('#clear');
 
 const calcularGramo = () => {
   try {
@@ -20,14 +18,16 @@ const calcularGramo = () => {
 
     let resultado = (pesoG / cantidadTapones) * (cantidadEmpaque / 454);
 
+    // Mostrar el resultado sin redondear
     screenPorDefecto.innerHTML = `${resultado.toFixed(4)} LB`;
-    screenRedondeado.innerHTML = `${Math.round(resultado)} LB`;
+
+    // Mostrar el resultado redondeado
+    screenRedondeado.innerHTML = `${Math.round(resultado * 100) / 100} LB`;
   } catch (error) {
     alert(error.message)
   }
-
-
 };
+
 function inputsClear() {
   pesoGramos.value = '';
   cantidadTapa.value = '';
@@ -35,8 +35,6 @@ function inputsClear() {
   screenPorDefecto.innerHTML = '';
   screenRedondeado.innerHTML = '';
 }
-
-
 
 btn.addEventListener('click', calcularGramo);
 btnClear.addEventListener('click', inputsClear);
